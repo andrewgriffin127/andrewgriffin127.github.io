@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Griffin</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #add8e6; /* Light Blue */
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 12px;
+        }
+
+        nav {
+            margin-right: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Body Area */
+        main {
+            padding: 20px;
+        }
+
+        .home-title {
+            font-size: 16pt;
+            margin-bottom: 10px;
+        }
+
+        .home-text {
+            font-size: 12pt;
+            max-width: 700px;
+            line-height: 1.4em;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 8px;
+                display: inline-block;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello! Welcome to my website.</h1>
-  <p>This page is hosted with GitHub Pages.</p>
+
+    <header>
+        <div class="site-title">Andrew Griffin</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="items.html">Items</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-title">Welcome to my page</div>
+        <div class="home-text">This is my website, feel free to explore.</div>
+    </main>
+
 </body>
 </html>
